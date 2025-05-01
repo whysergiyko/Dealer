@@ -1,1202 +1,528 @@
-<html lang="ru">
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Стартовый шаблон</title>
+    <title>Interno</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <div class="wrapper">
-      <div class="header__relative">
+      <div class="header__relative" data-aos="fade-down" data-aos-delay="300">
         <header class="header">
           <div class="header__container">
-            <button type="button" class="menu__icon icon-menu"><span></span></button>
-            <div class="header__menu menu">
-              <nav class="menu__body">
-                <ul class="menu__list">
-                  <li class="menu__item">
-                    <a href="#" class="menu__link">Одежда</a>
-                  </li>
-                  <li class="menu__item">
-                    <button class="menu__arrow">
-                      <img src="img/icons/arrow.svg" alt="" />
-                    </button>
-                    <a href="#" class="menu__link">Обувь</a>
-                    <div class="menu__sublist">
-                      <div class="menu--sublist__inner">
-                        <div class="menu--sublist__left sublist-left">
-                          <nav class="sublist-left__nav">
-                            <ul class="sublist-left__list sublist-left__list--delete">
-                              <p class="sublist-left__title">Разделы</p>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">Смотреть все</a>
-                              </li>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">Custom</a>
-                              </li>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">Pre-Loved</a>
-                              </li>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">В наличии</a>
-                              </li>
-                            </ul>
-                            <ul class="sublist-left__list">
-                              <p class="sublist-left__title">Категории</p>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">Смотреть все</a>
-                              </li>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link"> Свитера, трикотаж </a>
-                              </li>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">Худи, свитшоты</a>
-                              </li>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">Футболки, поло</a>
-                              </li>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link"> Кофты на молнии </a>
-                              </li>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">Лонгсливы</a>
-                              </li>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">В наличии</a>
-                              </li>
-                            </ul>
-                            <ul class="sublist-left__list sublist-left__list--delete">
-                              <p class="sublist-left__title">От редакции</p>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">На свидание</a>
-                              </li>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">Самые редкие модели</a>
-                              </li>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">Российские дизайнеры</a>
-                              </li>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">Футболки, поло</a>
-                              </li>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">Образы для делового ужина</a>
-                              </li>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">Перед тренировкой</a>
-                              </li>
-                            </ul>
-                            <ul class="sublist-left__list sublist-left__list--delete">
-                              <p class="sublist-left__title">Все бренды</p>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">Gucci</a>
-                              </li>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">Adidas</a>
-                              </li>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">Jacquemus</a>
-                              </li>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">Nike</a>
-                              </li>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">Dior</a>
-                              </li>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">Prada</a>
-                              </li>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">Dolce & Gabana</a>
-                              </li>
-                            </ul>
-                          </nav>
-                          <div class="sublist-left__block sublist-left-block">
-                            <a
-                              href=""
-                              class="sublist-left-block__catalog sublist-left-block__catalog--main"
-                              data-da=".menu__body,1000.99,1"
-                              >Весь каталог</a
-                            >
-                            <div class="sublist-left-block__runninText sublist-left-block__runninText--main">
-                              <p>весеннее обострение /// -40% на одежду adidas</p>
-                              <p>весеннее обострение /// -40% на одежду adidas</p>
-                              <p>весеннее обострение /// -40% на одежду adidas</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="menu--sublist__right sublist-right sublist-right--main" data-da=".menu__body,1000.99, last">
-                          <div class="sublist-right__inner">
-                            <div class="sublist-right__img">
-                              <img src="img/icons/focus.png" alt="Focus week" />
-                              <p class="sublist-right__focus">Фокус недели</p>
-                            </div>
-                            <p class="sublist-right__title"><span>Adidas</span> Ozweego</p>
-                            <a href="" class="sublist-right__link">Перейти к модели</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="menu__item">
-                    <a href="#" class="menu__link">Аксессуары</a>
-                  </li>
-                  <li class="menu__item">
-                    <button class="menu__arrow">
-                      <img src="img/icons/arrow.svg" alt="" />
-                    </button>
-                    <a href="#" class="menu__link">Обувь</a>
-                    <div class="menu__sublist">
-                      <div class="menu--sublist__inner">
-                        <div class="menu--sublist__left sublist-left">
-                          <nav class="sublist-left__nav">
-                            <ul class="sublist-left__list sublist-left__list--delete">
-                              <p class="sublist-left__title">Разделы</p>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">Смотреть все</a>
-                              </li>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">Custom</a>
-                              </li>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">Pre-Loved</a>
-                              </li>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">В наличии</a>
-                              </li>
-                            </ul>
-                            <ul class="sublist-left__list">
-                              <p class="sublist-left__title">Категории</p>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">Смотреть все</a>
-                              </li>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link"> Свитера, трикотаж </a>
-                              </li>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">Худи, свитшоты</a>
-                              </li>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">Футболки, поло</a>
-                              </li>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link"> Кофты на молнии </a>
-                              </li>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">Лонгсливы</a>
-                              </li>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">В наличии</a>
-                              </li>
-                            </ul>
-                            <ul class="sublist-left__list sublist-left__list--delete">
-                              <p class="sublist-left__title">От редакции</p>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">На свидание</a>
-                              </li>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">Самые редкие модели</a>
-                              </li>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">Российские дизайнеры</a>
-                              </li>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">Футболки, поло</a>
-                              </li>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">Образы для делового ужина</a>
-                              </li>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">Перед тренировкой</a>
-                              </li>
-                            </ul>
-                            <ul class="sublist-left__list sublist-left__list--delete">
-                              <p class="sublist-left__title">Все бренды</p>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">Gucci</a>
-                              </li>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">Adidas</a>
-                              </li>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">Jacquemus</a>
-                              </li>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">Nike</a>
-                              </li>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">Dior</a>
-                              </li>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">Prada</a>
-                              </li>
-                              <li class="sublist-left__item">
-                                <a href="" class="sublist-left__link">Dolce & Gabana</a>
-                              </li>
-                            </ul>
-                          </nav>
-                          <div class="sublist-left__block sublist-left-block">
-                            <a href="" class="sublist-left-block__catalog" data-da=".menu__body,1000.99,1">Весь каталог</a>
-                            <div class="sublist-left-block__runninText sublist-left-block__runninText--main">
-                              <p>весеннее обострение /// -40% на одежду adidas</p>
-                              <p>весеннее обострение /// -40% на одежду adidas</p>
-                              <p>весеннее обострение /// -40% на одежду adidas</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="menu--sublist__right sublist-right" data-da=".menu__body,1000.99, last">
-                          <div class="sublist-right__inner">
-                            <div class="sublist-right__img">
-                              <img src="img/icons/focus.png" alt="Focus week" />
-                              <p class="sublist-right__focus">Фокус недели</p>
-                            </div>
-                            <p class="sublist-right__title"><span>Adidas</span> Ozweego</p>
-                            <a href="" class="sublist-right__link">Перейти к модели</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="menu__item">
-                    <a href="#" class="menu__link">Товары для спорта</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-            <a href="#" class="header__logo">
-              <svg width="93" height="16" viewBox="0 0 93 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_6112_367)">
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M1.12875 14.9396L1.37391 14.4166V0.458647L0.0901043 0.0738583C0.00613356 0.0487547 0.0733102 0.0520229 0.112581 0.0520229C1.03946 0.0546379 7.56619 0.0696735 7.56619 0.0696735C9.94456 0.058691 11.9216 0.961762 13.4195 2.30543C14.8786 3.61423 15.8897 5.33452 15.8897 7.52372C15.8897 9.25172 15.2738 10.4476 14.592 11.477C12.0644 15.2937 7.25395 14.9995 7.25395 14.9995H1.1665C1.13581 14.9995 1.11566 14.9675 1.12875 14.9396ZM64.7895 0.0479708V15.0048H76.4999V14.2149C73.5023 14.2149 70.5047 14.2149 67.5072 14.2149V7.75646H75.78V6.9276H67.4941V0.835069C70.4959 0.835069 73.4979 0.835069 76.4999 0.835069V0.0618296L64.7895 0.0479708ZM79.0657 15.0048V0.0479708H87.1056C87.8998 0.0479708 92.3774 0.610968 92.3774 3.69288C92.3774 6.25359 89.8159 7.52638 87.4765 7.52638H84.4056C84.4056 7.52638 84.3591 10.1508 88.7148 11.0277C90.0654 11.2996 91.0962 11.6714 91.7198 12.2121C93.1074 13.4152 92.925 15.0048 92.925 15.0048H89.1079C88.6199 14.1614 87.4428 13.0014 86.5627 12.2207C85.3623 11.1556 83.5342 9.13161 83.5342 7.04042H86.5528C86.9085 7.01085 87.9973 7.01013 88.8112 6.08525C89.2309 5.60848 89.4238 4.89382 89.4238 3.82297C89.4238 0.512515 85.8347 0.652546 85.6934 0.652546H81.6503V15.0048H79.0657ZM50.745 0.0479708H53.523V14.24H62.494V15.0032L50.745 15.0048V0.0479708ZM30.5574 15.0048H31.4197L34.0542 10.4013H43.2864L45.8787 14.9949H49.1059L40.4615 0.0479708H37.1003L38.4305 1.23999L30.5574 15.0048ZM34.3985 9.7997L38.7028 2.27892L42.9469 9.7997H34.3985ZM17.627 0.0479708V15.0048H29.3372V14.2149C26.3398 14.2149 23.3422 14.2149 20.3446 14.2149V7.75646H28.6175V6.9276H20.3315V0.835069C23.3334 0.835069 26.3353 0.835069 29.3372 0.835069V0.0618296L17.627 0.0479708ZM4.08721 0.391313C5.55389 0.391313 12.9103 0.0479708 12.9103 7.52638C12.9103 11.9611 10.1224 14.3853 7.13222 14.3853H4.14748L4.08721 0.391313Z"
-                    fill="white"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_6112_367">
-                    <rect width="93" height="15.0359" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
+            <a href="" class="header__logo">
+              <img src="img/icons/logo.svg" alt="Logo" />
             </a>
-            <div class="header__buttons header-buttons">
-              <div class="header-buttons__inner">
-                <a href="" class="header-buttons__link">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22" fill="none">
-                    <path
-                      d="M21.047 2.52764C19.8359 1.23942 18.2306 0.453164 16.5209 0.310898C14.8112 0.168633 13.1099 0.679738 11.7244 1.75189C10.2707 0.604795 8.46145 0.0846477 6.66082 0.296192C4.86019 0.507737 3.20199 1.43526 2.02013 2.89198C0.838278 4.3487 0.220558 6.22641 0.291367 8.14699C0.362177 10.0676 1.11626 11.8884 2.40175 13.2427L9.49654 20.782C10.0906 21.4023 10.8908 21.75 11.7244 21.75C12.5579 21.75 13.3581 21.4023 13.9522 20.782L21.047 13.2427C22.3809 11.8188 23.1296 9.89274 23.1296 7.88516C23.1296 5.87758 22.3809 3.95154 21.047 2.52764ZM19.4361 11.57L12.3413 19.0972C12.2606 19.1837 12.1645 19.2523 12.0586 19.2992C11.9527 19.346 11.8391 19.3701 11.7244 19.3701C11.6096 19.3701 11.496 19.346 11.3902 19.2992C11.2843 19.2523 11.1882 19.1837 11.1074 19.0972L4.01265 11.5336C3.11667 10.5619 2.61495 9.25662 2.61495 7.89728C2.61495 6.53794 3.11667 5.23265 4.01265 4.26095C4.92566 3.30459 6.15705 2.76833 7.44008 2.76833C8.72311 2.76833 9.9545 3.30459 10.8675 4.26095C10.9737 4.37456 11.1001 4.46474 11.2393 4.52627C11.3785 4.58781 11.5279 4.61949 11.6787 4.61949C11.8295 4.61949 11.9788 4.58781 12.118 4.52627C12.2573 4.46474 12.3836 4.37456 12.4898 4.26095C13.4029 3.30459 14.6342 2.76833 15.9173 2.76833C17.2003 2.76833 18.4317 3.30459 19.3447 4.26095C20.253 5.21991 20.7712 6.51813 20.7883 7.87751C20.8054 9.23688 20.32 10.5493 19.4361 11.5336V11.57Z"
-                      fill="white"
-                    />
-                  </svg>
-                </a>
-                <a href="" class="header-buttons__link">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 26 24" fill="none">
-                    <path
-                      d="M3.12964 6H22.1296V4H3.12964V6ZM23.1296 7V21H25.1296V7H23.1296ZM22.1296 22H3.12964V24H22.1296V22ZM2.12964 21V7H0.129639V21H2.12964ZM3.12964 22C2.57735 22 2.12964 21.5523 2.12964 21H0.129639C0.129639 22.6569 1.47278 24 3.12964 24V22ZM23.1296 21C23.1296 21.5523 22.6819 22 22.1296 22V24C23.7865 24 25.1296 22.6569 25.1296 21H23.1296ZM22.1296 6C22.6819 6 23.1296 6.44771 23.1296 7H25.1296C25.1296 5.34315 23.7865 4 22.1296 4V6ZM3.12964 4C1.47278 4 0.129639 5.34315 0.129639 7H2.12964C2.12964 6.44772 2.57735 6 3.12964 6V4Z"
-                      fill="white"
-                    />
-                    <path
-                      d="M18.1296 9V2C18.1296 1.44772 17.6819 1 17.1296 1H8.12964C7.57735 1 7.12964 1.44772 7.12964 2V9"
-                      stroke="white"
-                      stroke-width="2"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                  <span></span>
-                </a>
-                <a href="" class="header-buttons__link">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="22" viewBox="0 0 15 22" fill="none">
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M12.2838 9.36228C11.0884 11.7658 8.17087 12.7451 5.7674 11.5496C3.36393 10.3542 2.38462 7.43674 3.58004 5.03326C4.77547 2.62979 7.69295 1.65048 10.0964 2.8459C12.4999 4.04133 13.4792 6.95881 12.2838 9.36228ZM5.5779 13.6423C8.81803 14.8304 12.5019 13.4147 14.0745 10.2529C15.7618 6.86048 14.3795 2.7425 10.9871 1.05517C7.59462 -0.632153 3.47664 0.750136 1.78931 4.1426C0.216726 7.30437 1.31047 11.0963 4.21288 12.9634L0.46013 20.5085L1.82515 21.1875L5.5779 13.6423Z"
-                      fill="white"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
+            <nav class="header__menu menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="" class="menu__link menu__link--active">Home</a>
+                </li>
+                <li class="menu__item"><a href="" class="menu__link">About Us</a></li>
+                <li class="menu__item"><a href="" class="menu__link">Services</a></li>
+                <li class="menu__item"><a href="" class="menu__link">Pages</a></li>
+                <li class="menu__item"><a href="" class="menu__link">Contact Us</a></li>
+              </ul>
+            </nav>
+            <button class="header__button"><span></span></button>
           </div>
         </header>
       </div>
-
       <main class="page">
         <section class="hero">
-          <div class="hero__slider swiper">
-            <div class="hero__wrapper swiper-wrapper">
-              <div class="hero-slide swiper-slide">
-                <div class="hero-slide__container">
-                  <h1 class="hero-slide__title">распродажа товаров для неё</h1>
-                  <a href="" class="hero-slide__catalog">Перейти в каталог</a>
-                </div>
+          <div class="hero__container">
+            <div class="hero__left hero-left">
+              <h1 class="hero-left__title" data-aos="fade-right">
+                Let's Create Your Dream Interior
+              </h1>
+              <div class="hero-left__text" data-aos="fade-right" data-aos-delay="500">
+                <p>
+                  The world needs innovators and problem solvers who turn challenges into greater
+                  opportunities.
+                </p>
               </div>
-              <div class="hero-slide swiper-slide">
-                <div class="hero-slide__container">
-                  <h1 class="hero-slide__title">распродажа товаров для неё</h1>
-                  <a href="" class="hero-slide__catalog">Перейти в каталог</a>
-                </div>
-              </div>
-              <div class="hero-slide swiper-slide">
-                <div class="hero-slide__container">
-                  <h1 class="hero-slide__title">распродажа товаров для неё</h1>
-                  <a href="" class="hero-slide__catalog">Перейти в каталог</a>
-                </div>
-              </div>
-              <div class="hero-slide swiper-slide">
-                <div class="hero-slide__container">
-                  <h1 class="hero-slide__title">распродажа товаров для неё</h1>
-                  <a href="" class="hero-slide__catalog">Перейти в каталог</a>
-                </div>
-              </div>
-            </div>
-            <div class="hero-pagination swiper-pagination"></div>
-          </div>
-        </section>
-        <section class="links">
-          <div class="links__container">
-            <div class="links__slider swiper">
-              <div class="links__wrapper swiper-wrapper">
-                <div class="links-slide swiper-slide">
-                  <a href="" class="links-slide__inner">
-                    <div class="links-slide__img">
-                      <img src="img/links/1.jpg" alt="" />
-                    </div>
-                    <p class="links-slide__title">покупка</p>
-                  </a>
-                </div>
-                <div class="links-slide swiper-slide">
-                  <a href="" class="links-slide__inner">
-                    <div class="links-slide__img">
-                      <img src="img/links/2.jpg" alt="" />
-                    </div>
-                    <p class="links-slide__title">доставка</p>
-                  </a>
-                </div>
-                <div class="links-slide swiper-slide">
-                  <a href="" class="links-slide__inner">
-                    <div class="links-slide__img">
-                      <img src="img/links/3.jpg" alt="" />
-                    </div>
-                    <p class="links-slide__title">pre-loved</p>
-                  </a>
-                </div>
-                <div class="links-slide swiper-slide">
-                  <a href="" class="links-slide__inner">
-                    <div class="links-slide__img">
-                      <img src="img/links/4.jpg" alt="" />
-                    </div>
-                    <p class="links-slide__title">custom</p>
-                  </a>
-                </div>
-                <div class="links-slide swiper-slide">
-                  <a href="" class="links-slide__inner">
-                    <div class="links-slide__img">
-                      <img src="img/links/5.jpg" alt="" />
-                    </div>
-                    <p class="links-slide__title">custom</p>
-                  </a>
-                </div>
-                <div class="links-slide swiper-slide">
-                  <a href="" class="links-slide__inner">
-                    <div class="links-slide__img">
-                      <img src="img/links/6.jpg" alt="" />
-                    </div>
-                    <p class="links-slide__title">консьерж</p>
-                  </a>
-                </div>
-              </div>
+              <a href="" class="hero-left__link" data-aos="fade-top" data-aos-delay="700"
+                >Get Started</a
+              >
             </div>
           </div>
         </section>
-        <div class="mostPopular">
-          <div class="mostPopular__container">
-            <div class="mostPopular__inner primary--inner">
-              <h2 class="mostPopular__title primary--title">Cамое популярное сейчас</h2>
-              <a href="" class="mostPopular__link primary--link">Перейти</a>
-            </div>
-            <div class="mostPopular__slider swiper">
-              <div class="mostPopular__wrapper swiper-wrapper">
-                <div class="mostPopular__slide swiper-slide primaryCard">
-                  <a href="product.html" class="primaryCard__inner">
-                    <div class="primaryCard__top">
-                      <p class="primaryCard__preLoved">Pre-loved</p>
-                      <button class="primaryCard__favorite">
-                        <img src="img/icons/heartS.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="primaryCard__img">
-                      <img src="img/primaryCard/1.jpg" alt="" />
-                    </div>
-                    <h4 class="primaryCard__title">Сумка <span>Jacquemus</span> Le Bambidou</h4>
-                    <p class="primaryCard__price">21 999₽</p>
-                  </a>
-                </div>
-                <div class="mostPopular__slide swiper-slide primaryCard">
-                  <a href="product.html" class="primaryCard__inner">
-                    <div class="primaryCard__top">
-                      <p class="primaryCard__hot">hot</p>
-                      <button class="primaryCard__favorite">
-                        <img src="img/icons/heartS.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="primaryCard__img">
-                      <img src="img/primaryCard/1.jpg" alt="" />
-                    </div>
-                    <h4 class="primaryCard__title">Сумка <span>Jacquemus</span> Le Bambidou</h4>
-                    <p class="primaryCard__price">21 999₽</p>
-                  </a>
-                </div>
-                <div class="mostPopular__slide swiper-slide primaryCard">
-                  <a href="product.html" class="primaryCard__inner">
-                    <div class="primaryCard__top">
-                      <p class="primaryCard__preLoved">Pre-loved</p>
-                      <button class="primaryCard__favorite">
-                        <img src="img/icons/heartS.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="primaryCard__img">
-                      <img src="img/primaryCard/1.jpg" alt="" />
-                    </div>
-                    <h4 class="primaryCard__title">Сумка <span>Jacquemus</span> Le Bambidou</h4>
-                    <p class="primaryCard__price">21 999₽</p>
-                  </a>
-                </div>
-                <div class="mostPopular__slide swiper-slide primaryCard">
-                  <a href="product.html" class="primaryCard__inner">
-                    <div class="primaryCard__top">
-                      <p class="primaryCard__hot">hot</p>
-                      <button class="primaryCard__favorite">
-                        <img src="img/icons/heartS.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="primaryCard__img">
-                      <img src="img/primaryCard/1.jpg" alt="" />
-                    </div>
-                    <h4 class="primaryCard__title">Сумка <span>Jacquemus</span> Le Bambidou</h4>
-                    <p class="primaryCard__price">21 999₽</p>
-                  </a>
-                </div>
-                <div class="mostPopular__slide swiper-slide primaryCard">
-                  <a href="product.html" class="primaryCard__inner">
-                    <div class="primaryCard__top">
-                      <p class="primaryCard__hot">hot</p>
-                      <button class="primaryCard__favorite">
-                        <img src="img/icons/heartS.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="primaryCard__img">
-                      <img src="img/primaryCard/1.jpg" alt="" />
-                    </div>
-                    <h4 class="primaryCard__title">Сумка <span>Jacquemus</span> Le Bambidou</h4>
-                    <p class="primaryCard__price">21 999₽</p>
-                  </a>
-                </div>
-                <div class="mostPopular__slide swiper-slide primaryCard">
-                  <a href="product.html" class="primaryCard__inner">
-                    <div class="primaryCard__top">
-                      <p class="primaryCard__preLoved">Pre-loved</p>
-                      <button class="primaryCard__favorite">
-                        <img src="img/icons/heartS.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="primaryCard__img">
-                      <img src="img/primaryCard/1.jpg" alt="" />
-                    </div>
-                    <h4 class="primaryCard__title">Сумка <span>Jacquemus</span> Le Bambidou</h4>
-                    <p class="primaryCard__price">21 999₽</p>
-                  </a>
-                </div>
+        <section class="items">
+          <div class="items__container">
+            <div class="items__item items-item" data-aos="fade-right">
+              <h2 class="items-item__title">Interior Design</h2>
+              <div class="items-item__text">
+                <p>
+                  Enhancing the interior to achieve a healthier environment for the people using
+                  right space.
+                </p>
               </div>
-              <button type="button" class="mostPopular-button-prev swiper-button-prev primary--arrow-left"></button>
-              <button type="button" class="mostPopular-button-next swiper-button-next primary--arrow-right"></button>
+              <a href="" class="items-item__link">View More</a>
             </div>
-          </div>
-        </div>
-        <section class="newItems">
-          <div class="newItems__container">
-            <div class="newItems__inner primary--inner">
-              <h2 class="newItems__title primary--title">Новинки</h2>
-              <a href="" class="newItems__link primary--link">Перейти</a>
-            </div>
-            <div class="newItems__slider swiper">
-              <div class="newItems__wrapper swiper-wrapper">
-                <div class="newItems__slide swiper-slide primaryCard">
-                  <a href="product.html" class="primaryCard__inner">
-                    <div class="primaryCard__top">
-                      <p class="primaryCard__hot">hot</p>
-                      <button class="primaryCard__favorite">
-                        <img src="img/icons/heartS.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="primaryCard__img">
-                      <img src="img/primaryCard/1.jpg" alt="" />
-                    </div>
-                    <h4 class="primaryCard__title">Сумка <span>Jacquemus</span> Le Bambidou</h4>
-                    <p class="primaryCard__price">21 999₽</p>
-                  </a>
-                </div>
-                <div class="newItems__slide swiper-slide primaryCard">
-                  <a href="product.html" class="primaryCard__inner">
-                    <div class="primaryCard__top">
-                      <p class="primaryCard__preLoved">Pre-loved</p>
-                      <button class="primaryCard__favorite">
-                        <img src="img/icons/heartS.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="primaryCard__img">
-                      <img src="img/primaryCard/1.jpg" alt="" />
-                    </div>
-                    <h4 class="primaryCard__title">Сумка <span>Jacquemus</span> Le Bambidou</h4>
-                    <p class="primaryCard__price">21 999₽</p>
-                  </a>
-                </div>
-                <div class="newItems__slide swiper-slide primaryCard">
-                  <a href="product.html" class="primaryCard__inner">
-                    <div class="primaryCard__top">
-                      <p class="primaryCard__hot">hot</p>
-                      <button class="primaryCard__favorite">
-                        <img src="img/icons/heartS.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="primaryCard__img">
-                      <img src="img/primaryCard/1.jpg" alt="" />
-                    </div>
-                    <h4 class="primaryCard__title">Сумка <span>Jacquemus</span> Le Bambidou</h4>
-                    <p class="primaryCard__price">21 999₽</p>
-                  </a>
-                </div>
-                <div class="newItems__slide swiper-slide primaryCard">
-                  <a href="product.html" class="primaryCard__inner">
-                    <div class="primaryCard__top">
-                      <p class="primaryCard__preLoved">Pre-loved</p>
-                      <button class="primaryCard__favorite">
-                        <img src="img/icons/heartS.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="primaryCard__img">
-                      <img src="img/primaryCard/1.jpg" alt="" />
-                    </div>
-                    <h4 class="primaryCard__title">Сумка <span>Jacquemus</span> Le Bambidou</h4>
-                    <p class="primaryCard__price">21 999₽</p>
-                  </a>
-                </div>
-                <div class="newItems__slide swiper-slide primaryCard">
-                  <a href="product.html" class="primaryCard__inner">
-                    <div class="primaryCard__top">
-                      <p class="primaryCard__hot">hot</p>
-                      <button class="primaryCard__favorite">
-                        <img src="img/icons/heartS.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="primaryCard__img">
-                      <img src="img/primaryCard/1.jpg" alt="" />
-                    </div>
-                    <h4 class="primaryCard__title">Сумка <span>Jacquemus</span> Le Bambidou</h4>
-                    <p class="primaryCard__price">21 999₽</p>
-                  </a>
-                </div>
-                <div class="newItems__slide swiper-slide primaryCard">
-                  <a href="product.html" class="primaryCard__inner">
-                    <div class="primaryCard__top">
-                      <p class="primaryCard__hot">hot</p>
-                      <button class="primaryCard__favorite">
-                        <img src="img/icons/heartS.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="primaryCard__img">
-                      <img src="img/primaryCard/1.jpg" alt="" />
-                    </div>
-                    <h4 class="primaryCard__title">Сумка <span>Jacquemus</span> Le Bambidou</h4>
-                    <p class="primaryCard__price">21 999₽</p>
-                  </a>
-                </div>
+            <div class="items__item items-item" data-aos="fade-right" data-aos-delay="300">
+              <h2 class="items-item__title">Interior Design</h2>
+              <div class="items-item__text">
+                <p>
+                  Enhancing the interior to achieve a healthier environment for the people using
+                  right space.
+                </p>
               </div>
-              <button type="button" class="newItems-button-prev swiper-button-prev primary--arrow-left"></button>
-              <button type="button" class="newItems-button-next swiper-button-next primary--arrow-right"></button>
+              <a href="" class="items-item__link">View More</a>
+            </div>
+            <div class="items__item items-item" data-aos="fade-right" data-aos-delay="500">
+              <h2 class="items-item__title">Interior Design</h2>
+              <div class="items-item__text">
+                <p>
+                  Enhancing the interior to achieve a healthier environment for the people using
+                  right space.
+                </p>
+              </div>
+              <a href="" class="items-item__link">View More</a>
             </div>
           </div>
         </section>
-        <section class="clothes">
-          <div class="clothes__container">
-            <div class="clothes__inner">
-              <a href="" class="clothes__link">
-                <div class="clothes__img">
-                  <picture>
-                    <source media="(max-width:1000.99px)" srcset="img/clothes/1xs.jpg" />
-                    <img src="img/clothes/1.jpg" alt="" />
-                  </picture>
-                </div>
-                <p class="clothes__title">одежда</p>
-              </a>
-              <a href="" class="clothes__link">
-                <div class="clothes__img">
-                  <picture>
-                    <source media="(max-width:1000.99px)" srcset="img/clothes/2xs.jpg" />
-                    <img src="img/clothes/2.jpg" alt="" />
-                  </picture>
-                </div>
-                <p class="clothes__title">обувь</p>
-              </a>
-              <div class="clothes__block">
-                <a href="" class="clothes__link" data-da=".clothes__inner,1000.99,last">
-                  <div class="clothes__img">
-                    <picture>
-                      <source media="(max-width:1000.99px)" srcset="img/clothes/3xs.jpg" />
-                      <img src="img/clothes/3s.jpg" alt="" />
-                    </picture>
-                  </div>
-                  <p class="clothes__title">аксессуары</p>
+        <section class="most">
+          <div class="most__container">
+            <div class="most__left most-left">
+              <h2 class="most-left__title" data-aos="fade-right">
+                We Tackle The Most Challenging Designs
+              </h2>
+              <div class="most-left__text" data-aos="fade-right" data-aos-delay="300">
+                <p>
+                  The world needs innovators and problem solvers who turn challenges into greater
+                  opportunities. We have an insatiable curiosity about transformative trends
+                  challenging the status.
+                </p>
+              </div>
+              <div class="most-left__call most-call">
+                <a href="tel:012345678" class="most-call__img">
+                  <img src="img/icons/call.svg" alt="Call" />
                 </a>
-                <a href="" class="clothes__link" data-da=".clothes__inner,1000.99,5">
-                  <div class="clothes__img">
-                    <picture>
-                      <source media="(max-width:1000.99px)" srcset="img/clothes/4xs.jpg" />
-                      <img src="img/clothes/2s.jpg" alt="" />
-                    </picture>
+                <div class="most-call__info">
+                  <a
+                    href="tel:012345678"
+                    class="most-call__link"
+                    data-aos="fade-right"
+                    data-aos-delay="400"
+                  >
+                    012345678
+                  </a>
+                  <p class="most-call__link" data-aos="fade-right">Call Us Anytime</p>
+                </div>
+              </div>
+              <a href="" class="most-left__button" data-aos="fade-top" data-aos-delay="700"
+                >Get Free Estimate</a
+              >
+            </div>
+            <div class="most__img" data-aos="fade-left" data-aos-delay="500">
+              <img src="img/most/1.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+        <section class="people">
+          <div class="people__container">
+            <h2 class="people__title" data-aos="fade-down">What the People Thinks About Interno</h2>
+            <div class="swiper people__slider">
+              <div class="swiper-wrapper people-wrapper">
+                <div class="swiper-slide people-slide" data-aos="fade">
+                  <div class="people-slide__user people-user">
+                    <div class="people-user__img">
+                      <img src="img/people/1.jpg" alt="user" />
+                    </div>
+                    <div class="people-user__info">
+                      <h2 class="people-user__name">Lisa Clairton</h2>
+                      <div class="people-user__text">
+                        <p>New York, USA</p>
+                      </div>
+                    </div>
                   </div>
-                  <p class="clothes__title">сумки</p>
-                </a>
-                <a href="" class="clothes__link">
-                  <div class="clothes__img">
-                    <img src="img/clothes/1s.jpg" alt="" />
+                  <div class="people-slide__text">
+                    <p>
+                      We selected Interno interior because of rigorous design background &
+                      education.
+                    </p>
                   </div>
-                  <p class="clothes__title">одежда</p>
-                </a>
+                </div>
+                <div class="swiper-slide people-slide" data-aos="fade" data-aos-delay="400">
+                  <div class="people-slide__user people-user">
+                    <div class="people-user__img">
+                      <img src="img/people/2.jpg" alt="user" />
+                    </div>
+                    <div class="people-user__info">
+                      <h2 class="people-user__name">David Knight</h2>
+                      <div class="people-user__text">
+                        <p>Sydney, Australia</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="people-slide__text">
+                    <p>
+                      The team exceeded our expectations and emerged as leaders of our project’s.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide people-slide" data-aos="fade" data-aos-delay="500">
+                  <div class="people-slide__user people-user">
+                    <div class="people-user__img">
+                      <img src="img/people/3.jpg" alt="user" />
+                    </div>
+                    <div class="people-user__info">
+                      <h2 class="people-user__name">Lisa Clairton</h2>
+                      <div class="people-user__text">
+                        <p>Paris, France</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="people-slide__text">
+                    <p>
+                      They balanced the architectural vision and the project realities beautifully.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </section>
-        <section class="forEvening">
-          <div class="forEvening__container">
-            <div class="forEvening__inner primary--inner">
-              <h2 class="forEvening__title primary--title">Для вечерних прогулок</h2>
-              <a href="" class="forEvening__link primary--link">Перейти</a>
-            </div>
-            <div class="forEvening__slider swiper">
-              <div class="forEvening__wrapper swiper-wrapper">
-                <div class="forEvening__slide swiper-slide primaryCard">
-                  <a href="product.html" class="primaryCard__inner">
-                    <div class="primaryCard__top">
-                      <p class="primaryCard__hot">hot</p>
-                      <button class="primaryCard__favorite">
-                        <img src="img/icons/heartS.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="primaryCard__img">
-                      <img src="img/primaryCard/1.jpg" alt="" />
-                    </div>
-                    <h4 class="primaryCard__title">Сумка <span>Jacquemus</span> Le Bambidou</h4>
-                    <p class="primaryCard__price">21 999₽</p>
+        <section class="brands">
+          <div class="brands__container">
+            <div class="swiper brands__slider">
+              <div class="swiper-wrapper brands-wrapper">
+                <div class="swiper-slide brands-slide">
+                  <a href="" class="brands-slide__link">
+                    <img src="img/brands/1.svg" alt="" />
                   </a>
                 </div>
-                <div class="forEvening__slide swiper-slide primaryCard">
-                  <a href="product.html" class="primaryCard__inner">
-                    <div class="primaryCard__top">
-                      <p class="primaryCard__hot">hot</p>
-                      <button class="primaryCard__favorite">
-                        <img src="img/icons/heartS.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="primaryCard__img">
-                      <img src="img/primaryCard/1.jpg" alt="" />
-                    </div>
-                    <h4 class="primaryCard__title">Сумка <span>Jacquemus</span> Le Bambidou</h4>
-                    <p class="primaryCard__price">21 999₽</p>
+                <div class="swiper-slide brands-slide">
+                  <a href="" class="brands-slide__link">
+                    <img src="img/brands/2.svg" alt="" />
                   </a>
                 </div>
-                <div class="forEvening__slide swiper-slide primaryCard">
-                  <a href="product.html" class="primaryCard__inner">
-                    <div class="primaryCard__top">
-                      <p class="primaryCard__preLoved">Pre-loved</p>
-                      <button class="primaryCard__favorite">
-                        <img src="img/icons/heartS.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="primaryCard__img">
-                      <img src="img/primaryCard/1.jpg" alt="" />
-                    </div>
-                    <h4 class="primaryCard__title">Сумка <span>Jacquemus</span> Le Bambidou</h4>
-                    <p class="primaryCard__price">21 999₽</p>
+                <div class="swiper-slide brands-slide">
+                  <a href="" class="brands-slide__link">
+                    <img src="img/brands/3.svg" alt="" />
                   </a>
                 </div>
-                <div class="forEvening__slide swiper-slide primaryCard">
-                  <a href="product.html" class="primaryCard__inner">
-                    <div class="primaryCard__top">
-                      <p class="primaryCard__hot">hot</p>
-                      <button class="primaryCard__favorite">
-                        <img src="img/icons/heartS.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="primaryCard__img">
-                      <img src="img/primaryCard/1.jpg" alt="" />
-                    </div>
-                    <h4 class="primaryCard__title">Сумка <span>Jacquemus</span> Le Bambidou</h4>
-                    <p class="primaryCard__price">21 999₽</p>
+                <div class="swiper-slide brands-slide">
+                  <a href="" class="brands-slide__link">
+                    <img src="img/brands/4.svg" alt="" />
                   </a>
                 </div>
-                <div class="forEvening__slide swiper-slide primaryCard">
-                  <a href="product.html" class="primaryCard__inner">
-                    <div class="primaryCard__top">
-                      <p class="primaryCard__preLoved">Pre-loved</p>
-                      <button class="primaryCard__favorite">
-                        <img src="img/icons/heartS.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="primaryCard__img">
-                      <img src="img/primaryCard/1.jpg" alt="" />
-                    </div>
-                    <h4 class="primaryCard__title">Сумка <span>Jacquemus</span> Le Bambidou</h4>
-                    <p class="primaryCard__price">21 999₽</p>
-                  </a>
-                </div>
-                <div class="forEvening__slide swiper-slide primaryCard">
-                  <a href="product.html" class="primaryCard__inner">
-                    <div class="primaryCard__top">
-                      <p class="primaryCard__hot">hot</p>
-                      <button class="primaryCard__favorite">
-                        <img src="img/icons/heartS.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="primaryCard__img">
-                      <img src="img/primaryCard/1.jpg" alt="" />
-                    </div>
-                    <h4 class="primaryCard__title">Сумка <span>Jacquemus</span> Le Bambidou</h4>
-                    <p class="primaryCard__price">21 999₽</p>
-                  </a>
-                </div>
-              </div>
-              <button type="button" class="forEvening-button-prev swiper-button-prev primary--arrow-left"></button>
-              <button type="button" class="forEvening-button-next swiper-button-next primary--arrow-right"></button>
-            </div>
-          </div>
-        </section>
-        <section class="nike">
-          <div class="nike__container">
-            <h2 class="nike__title primary--title">Взгляните на</h2>
-            <div class="nike__block">
-              <div class="nike__inner">
-                <button type="button" class="nike-button-prev swiper-button-prev primary--arrow-left"></button>
-                <div class="nike__img">
-                  <img src="img/nike/logo.svg" alt="" />
-                </div>
-                <button type="button" class="nike-button-next swiper-button-next primary--arrow-right"></button>
-              </div>
-            </div>
-            <div class="nike__slider swiper">
-              <div class="nike__wrapper swiper-wrapper">
-                <div class="nike-slide swiper-slide">
-                  <div class="nike-slide__img">
-                    <img src="img/nike/1.jpg" alt="" />
-                  </div>
-                  <h4 class="nike-slide__title">bred Fr mixer</h4>
-                  <a href="" class="nike-slide__link">
-                    <img src="img/icons/arrow.svg" alt="" />
-                  </a>
-                </div>
-                <div class="nike-slide swiper-slide">
-                  <div class="nike-slide__img">
-                    <img src="img/nike/2.jpg" alt="" />
-                  </div>
-                  <h4 class="nike-slide__title nike-slide__title--top">nike air jordan 1</h4>
-                  <a href="" class="nike-slide__link">
-                    <img src="img/icons/arrow.svg" alt="" />
-                  </a>
-                </div>
-                <div class="nike-slide swiper-slide">
-                  <div class="nike-slide__img">
-                    <img src="img/nike/3.jpg" alt="" />
-                  </div>
-                  <h4 class="nike-slide__title">nike air Maximus</h4>
-                  <a href="" class="nike-slide__link">
-                    <img src="img/icons/arrow.svg" alt="" />
-                  </a>
-                </div>
-                <div class="nike-slide swiper-slide">
-                  <div class="nike-slide__img">
-                    <img src="img/nike/1.jpg" alt="" />
-                  </div>
-                  <h4 class="nike-slide__title nike-slide__title--top">bred Fr mixer</h4>
-                  <a href="" class="nike-slide__link">
-                    <img src="img/icons/arrow.svg" alt="" />
-                  </a>
-                </div>
-                <div class="nike-slide swiper-slide">
-                  <div class="nike-slide__img">
-                    <img src="img/nike/2.jpg" alt="" />
-                  </div>
-                  <h4 class="nike-slide__title">nike air jordan 1</h4>
-                  <a href="" class="nike-slide__link">
-                    <img src="img/icons/arrow.svg" alt="" />
-                  </a>
-                </div>
-                <div class="nike-slide swiper-slide">
-                  <div class="nike-slide__img">
-                    <img src="img/nike/3.jpg" alt="" />
-                  </div>
-                  <h4 class="nike-slide__title nike-slide__title--top">nike air Maximus</h4>
-                  <a href="" class="nike-slide__link">
-                    <img src="img/icons/arrow.svg" alt="" />
+                <div class="swiper-slide brands-slide">
+                  <a href="" class="brands-slide__link">
+                    <img src="img/brands/5.svg" alt="" />
                   </a>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section class="budget">
-          <div class="budget__container">
-            <div class="budget__inner primary--inner">
-              <h2 class="budget__title primary--title">Подберем пару по бюджету</h2>
-              <a href="" class="budget__link primary--link">Перейти</a>
+        <section class="recent">
+          <div class="recent__container">
+            <h2 class="recent__title" data-aos="fade-down">Recent Projects</h2>
+            <div class="recent__text" data-aos="fade" data-aos-delay="300">
+              <p>
+                With tools to make every part of your process more human and a support team excited
+                to help you, getting started with us never been easier.
+              </p>
             </div>
-            <div class="budget__slider swiper">
-              <div class="budget__wrapper swiper-wrapper">
-                <div class="budget__slide swiper-slide primaryCard">
-                  <a href="product.html" class="primaryCard__inner">
-                    <div class="primaryCard__top">
-                      <p class="primaryCard__preLoved">Pre-loved</p>
-                      <button class="primaryCard__favorite">
-                        <img src="img/icons/heartS.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="primaryCard__img">
-                      <img src="img/primaryCard/1.jpg" alt="" />
-                    </div>
-                    <h4 class="primaryCard__title">Сумка <span>Jacquemus</span> Le Bambidou</h4>
-                    <p class="primaryCard__price">21 999₽</p>
-                  </a>
+            <div class="recent__inner">
+              <div class="recent__item recent-item" data-aos="fade-right">
+                <div class="recent-item__img">
+                  <img src="img/recent/1.jpg" alt="" />
                 </div>
-                <div class="budget__slide swiper-slide primaryCard">
-                  <a href="product.html" class="primaryCard__inner">
-                    <div class="primaryCard__top">
-                      <p class="primaryCard__hot">hot</p>
-                      <button class="primaryCard__favorite">
-                        <img src="img/icons/heartS.svg" alt="" />
-                      </button>
+                <div class="recent-item__info recent-info">
+                  <div class="recent-info__left">
+                    <h2 class="recent-info__title">Winery Dry Creek Building</h2>
+                    <div class="recent-info__text">
+                      <p>Art Modern</p>
                     </div>
-                    <div class="primaryCard__img">
-                      <img src="img/primaryCard/1.jpg" alt="" />
-                    </div>
-                    <h4 class="primaryCard__title">Сумка <span>Jacquemus</span> Le Bambidou</h4>
-                    <p class="primaryCard__price">21 999₽</p>
-                  </a>
-                </div>
-                <div class="budget__slide swiper-slide primaryCard">
-                  <a href="product.html" class="primaryCard__inner">
-                    <div class="primaryCard__top">
-                      <p class="primaryCard__hot">hot</p>
-                      <button class="primaryCard__favorite">
-                        <img src="img/icons/heartS.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="primaryCard__img">
-                      <img src="img/primaryCard/1.jpg" alt="" />
-                    </div>
-                    <h4 class="primaryCard__title">Сумка <span>Jacquemus</span> Le Bambidou</h4>
-                    <p class="primaryCard__price">21 999₽</p>
-                  </a>
-                </div>
-                <div class="budget__slide swiper-slide primaryCard">
-                  <a href="product.html" class="primaryCard__inner">
-                    <div class="primaryCard__top">
-                      <p class="primaryCard__preLoved">Pre-loved</p>
-                      <button class="primaryCard__favorite">
-                        <img src="img/icons/heartS.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="primaryCard__img">
-                      <img src="img/primaryCard/1.jpg" alt="" />
-                    </div>
-                    <h4 class="primaryCard__title">Сумка <span>Jacquemus</span> Le Bambidou</h4>
-                    <p class="primaryCard__price">21 999₽</p>
-                  </a>
-                </div>
-                <div class="budget__slide swiper-slide primaryCard">
-                  <a href="product.html" class="primaryCard__inner">
-                    <div class="primaryCard__top">
-                      <p class="primaryCard__hot">hot</p>
-                      <button class="primaryCard__favorite">
-                        <img src="img/icons/heartS.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="primaryCard__img">
-                      <img src="img/primaryCard/1.jpg" alt="" />
-                    </div>
-                    <h4 class="primaryCard__title">Сумка <span>Jacquemus</span> Le Bambidou</h4>
-                    <p class="primaryCard__price">21 999₽</p>
-                  </a>
-                </div>
-                <div class="budget__slide swiper-slide primaryCard">
-                  <a href="product.html" class="primaryCard__inner">
-                    <div class="primaryCard__top">
-                      <p class="primaryCard__hot">hot</p>
-                      <button class="primaryCard__favorite">
-                        <img src="img/icons/heartS.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="primaryCard__img">
-                      <img src="img/primaryCard/1.jpg" alt="" />
-                    </div>
-                    <h4 class="primaryCard__title">Сумка <span>Jacquemus</span> Le Bambidou</h4>
-                    <p class="primaryCard__price">21 999₽</p>
+                  </div>
+                  <a href="" class="recent-info__link">
+                    <img src="img/icons/arrow2.svg" alt="" />
                   </a>
                 </div>
               </div>
-              <button type="button" class="budget-button-prev swiper-button-prev primary--arrow-left"></button>
-              <button type="button" class="budget-button-next swiper-button-next primary--arrow-right"></button>
-            </div>
-          </div>
-        </section>
-        <section class="inStock">
-          <div class="inStock__container">
-            <div class="inStock__inner primary--inner">
-              <h2 class="inStock__title primary--title">В наличии</h2>
-              <a href="" class="inStock__link primary--link">Перейти</a>
-            </div>
-            <div class="inStock__slider swiper">
-              <div class="inStock__wrapper swiper-wrapper">
-                <div class="inStock__slide swiper-slide primaryCard">
-                  <a href="product.html" class="primaryCard__inner">
-                    <div class="primaryCard__top">
-                      <p class="primaryCard__hot">hot</p>
-                      <button class="primaryCard__favorite">
-                        <img src="img/icons/heartS.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="primaryCard__img">
-                      <img src="img/primaryCard/1.jpg" alt="" />
-                    </div>
-                    <h4 class="primaryCard__title">Сумка <span>Jacquemus</span> Le Bambidou</h4>
-                    <p class="primaryCard__price">21 999₽</p>
-                  </a>
+              <div class="recent__item recent-item" data-aos="fade-left" data-aos-delay="300">
+                <div class="recent-item__img">
+                  <img src="img/recent/2.jpg" alt="" />
                 </div>
-                <div class="inStock__slide swiper-slide primaryCard">
-                  <a href="product.html" class="primaryCard__inner">
-                    <div class="primaryCard__top">
-                      <p class="primaryCard__hot">hot</p>
-                      <button class="primaryCard__favorite">
-                        <img src="img/icons/heartS.svg" alt="" />
-                      </button>
+                <div class="recent-item__info recent-info">
+                  <div class="recent-info__left">
+                    <h2 class="recent-info__title">Creative Workplace Design</h2>
+                    <div class="recent-info__text">
+                      <p>Minimalist</p>
                     </div>
-                    <div class="primaryCard__img">
-                      <img src="img/primaryCard/1.jpg" alt="" />
-                    </div>
-                    <h4 class="primaryCard__title">Сумка <span>Jacquemus</span> Le Bambidou</h4>
-                    <p class="primaryCard__price">21 999₽</p>
-                  </a>
-                </div>
-                <div class="inStock__slide swiper-slide primaryCard">
-                  <a href="product.html" class="primaryCard__inner">
-                    <div class="primaryCard__top">
-                      <p class="primaryCard__preLoved">Pre-loved</p>
-                      <button class="primaryCard__favorite">
-                        <img src="img/icons/heartS.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="primaryCard__img">
-                      <img src="img/primaryCard/1.jpg" alt="" />
-                    </div>
-                    <h4 class="primaryCard__title">Сумка <span>Jacquemus</span> Le Bambidou</h4>
-                    <p class="primaryCard__price">21 999₽</p>
-                  </a>
-                </div>
-                <div class="inStock__slide swiper-slide primaryCard">
-                  <a href="product.html" class="primaryCard__inner">
-                    <div class="primaryCard__top">
-                      <p class="primaryCard__preLoved">Pre-loved</p>
-                      <button class="primaryCard__favorite">
-                        <img src="img/icons/heartS.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="primaryCard__img">
-                      <img src="img/primaryCard/1.jpg" alt="" />
-                    </div>
-                    <h4 class="primaryCard__title">Сумка <span>Jacquemus</span> Le Bambidou</h4>
-                    <p class="primaryCard__price">21 999₽</p>
-                  </a>
-                </div>
-                <div class="inStock__slide swiper-slide primaryCard">
-                  <a href="product.html" class="primaryCard__inner">
-                    <div class="primaryCard__top">
-                      <p class="primaryCard__hot">hot</p>
-                      <button class="primaryCard__favorite">
-                        <img src="img/icons/heartS.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="primaryCard__img">
-                      <img src="img/primaryCard/1.jpg" alt="" />
-                    </div>
-                    <h4 class="primaryCard__title">Сумка <span>Jacquemus</span> Le Bambidou</h4>
-                    <p class="primaryCard__price">21 999₽</p>
-                  </a>
-                </div>
-                <div class="inStock__slide swiper-slide primaryCard">
-                  <a href="product.html" class="primaryCard__inner">
-                    <div class="primaryCard__top">
-                      <p class="primaryCard__hot">hot</p>
-                      <button class="primaryCard__favorite">
-                        <img src="img/icons/heartS.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="primaryCard__img">
-                      <img src="img/primaryCard/1.jpg" alt="" />
-                    </div>
-                    <h4 class="primaryCard__title">Сумка <span>Jacquemus</span> Le Bambidou</h4>
-                    <p class="primaryCard__price">21 999₽</p>
+                  </div>
+                  <a href="" class="recent-info__link">
+                    <img src="img/icons/arrow2.svg" alt="" />
                   </a>
                 </div>
               </div>
-              <button type="button" class="inStock-button-prev swiper-button-prev primary--arrow-left"></button>
-              <button type="button" class="inStock-button-next swiper-button-next primary--arrow-right"></button>
-            </div>
-          </div>
-        </section>
-        <section class="category">
-          <div class="category__container">
-            <div class="category__inner">
-              <div class="category__item">
-                <div class="category__img">
-                  <img src="img/category/1.jpg" alt="" />
+              <div class="recent__item recent-item" data-aos="fade-left">
+                <div class="recent-item__img">
+                  <img src="img/recent/3.jpg" alt="" />
                 </div>
-                <div class="category__info">
-                  <h5 class="category__subtitle">закастомизируем ваш гардероб</h5>
-                  <h4 class="category__title">dealer.custom</h4>
-                  <a href="" class="category__link">смотреть</a>
+                <div class="recent-item__info recent-info">
+                  <div class="recent-info__left">
+                    <h2 class="recent-info__title">Bedroom Interior Pot Work</h2>
+                    <div class="recent-info__text">
+                      <p>Modern</p>
+                    </div>
+                  </div>
+                  <a href="" class="recent-info__link">
+                    <img src="img/icons/arrow2.svg" alt="" />
+                  </a>
                 </div>
               </div>
-              <div class="category__item">
-                <div class="category__img">
-                  <img src="img/category/1.jpg" alt="" />
+              <div class="recent__item recent-item" data-aos="fade-right" data-aos-delay="300">
+                <div class="recent-item__img">
+                  <img src="img/recent/4.jpg" alt="" />
                 </div>
-                <div class="category__info">
-                  <h5 class="category__subtitle">для тех, кто ценит осознанное потребление</h5>
-                  <h4 class="category__title">pre-loved by dealer</h4>
-                  <a href="" class="category__link">смотреть</a>
+                <div class="recent-item__info recent-info">
+                  <div class="recent-info__left">
+                    <h2 class="recent-info__title">Light Ambience Sepia Design</h2>
+                    <div class="recent-info__text">
+                      <p>Scandinavian</p>
+                    </div>
+                  </div>
+                  <a href="" class="recent-info__link">
+                    <img src="img/icons/arrow2.svg" alt="" />
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section class="sell">
-          <div class="sell__container">
-            <div class="sell__inner">
-              <h2 class="sell__title">Продай свою пару вместе с нами</h2>
-              <div class="sell__text">
-                <p>Реализуем позиции, которые потеряли актуальность в вашем гардеробе</p>
+        <section class="achievements">
+          <div class="achievements__container">
+            <div class="achievements__item achievements-item" data-aos="fade-down">
+              <span class="achievements-item__num">12</span>
+              <div class="achievements-item__text">
+                <p>Years Of Experiance</p>
               </div>
-              <a href="" class="sell__link">В каталог</a>
+            </div>
+            <div
+              class="achievements__item achievements-item"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <span class="achievements-item__num">5K</span>
+              <div class="achievements-item__text">
+                <p>Success Project</p>
+              </div>
+            </div>
+            <div
+              class="achievements__item achievements-item"
+              data-aos="fade-down"
+              data-aos-delay="300"
+            >
+              <span class="achievements-item__num">1K</span>
+              <div class="achievements-item__text">
+                <p>Active Project</p>
+              </div>
+            </div>
+            <div
+              class="achievements__item achievements-item"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <span class="achievements-item__num">4K</span>
+              <div class="achievements-item__text">
+                <p>Happy Customers</p>
+              </div>
             </div>
           </div>
         </section>
-        <section class="discount">
-          <div class="discount__container">
-            <h2 class="discount__title">Скидка 7%</h2>
-            <div class="discount__text">
-              <p>Получите скидку 7% на первую покупку при подписке на наши эксклюзивные акции, обновления и новости</p>
+        <section class="blogs">
+          <div class="blogs__container">
+            <h2 class="blogs__title" data-aos="fade-down">Recent Blogs</h2>
+            <div class="blogs__text" data-aos="fade-right" data-aos-delay="200">
+              <p>
+                Get updates about our latest trends and techniques used in interior design project
+                works.
+              </p>
             </div>
-            <form action="" class="discount__form">
-              <input type="text" class="discount__input" placeholder="Е-mail" />
-              <button class="discount__button" type="submit">Подписаться</button>
-            </form>
+            <div class="blogs__inner">
+              <div class="blogs__item blogs-item" data-aos="fade-right">
+                <div class="blogs-item__img">
+                  <img src="img/blogs/1.jpg" alt="" />
+                  <p class="blogs-item__imgText">Kitchen Design</p>
+                </div>
+                <h4 class="blogs-item__title">Residential Interior Designer In New York, USA</h4>
+                <div class="blogs-item__inner">
+                  <p class="blogs-item__date">November 23, 2021</p>
+                  <a href="" class="blogs-item__link">
+                    <img src="img/icons/arrow2.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="blogs__item blogs-item" data-aos="fade-right" data-aos-delay="300">
+                <div class="blogs-item__img">
+                  <img src="img/blogs/2.jpg" alt="" />
+                  <p class="blogs-item__imgText">Living Room</p>
+                </div>
+                <h4 class="blogs-item__title">How To Choose The Best Wall Art & Decor House?</h4>
+                <div class="blogs-item__inner">
+                  <p class="blogs-item__date">November 23, 2021</p>
+                  <a href="" class="blogs-item__link">
+                    <img src="img/icons/arrow2.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="blogs__item blogs-item" data-aos="fade-right" data-aos-delay="500">
+                <div class="blogs-item__img">
+                  <img src="img/blogs/3.jpg" alt="" />
+                  <p class="blogs-item__imgText">Minimalist Interior</p>
+                </div>
+                <h4 class="blogs-item__title">Tips To Increase The Interior Value Of Your House</h4>
+                <div class="blogs-item__inner">
+                  <p class="blogs-item__date">November 23, 2021</p>
+                  <a href="" class="blogs-item__link">
+                    <img src="img/icons/arrow2.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="blogs__item blogs-item" data-aos="fade-left">
+                <div class="blogs-item__img">
+                  <img src="img/blogs/4.jpg" alt="" />
+                  <p class="blogs-item__imgText">Kitchen Design</p>
+                </div>
+                <h4 class="blogs-item__title">Best Solution For Any Office & Business Interior</h4>
+                <div class="blogs-item__inner">
+                  <p class="blogs-item__date">November 23, 2021</p>
+                  <a href="" class="blogs-item__link">
+                    <img src="img/icons/arrow2.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="blogs__item blogs-item" data-aos="fade-left" data-aos-delay="400">
+                <div class="blogs-item__img">
+                  <img src="img/blogs/5.jpg" alt="" />
+                  <p class="blogs-item__imgText">Living Room</p>
+                </div>
+                <h4 class="blogs-item__title">Get Solution For Building Construction Work</h4>
+                <div class="blogs-item__inner">
+                  <p class="blogs-item__date">November 23, 2021</p>
+                  <a href="" class="blogs-item__link">
+                    <img src="img/icons/arrow2.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="blogs__item blogs-item" data-aos="fade-left" data-aos-delay="600">
+                <div class="blogs-item__img">
+                  <img src="img/blogs/6.jpg" alt="" />
+                  <p class="blogs-item__imgText">Minimalist Interior</p>
+                </div>
+                <h4 class="blogs-item__title">Attain The Best Finish For The Kitchen Cabinets</h4>
+                <div class="blogs-item__inner">
+                  <p class="blogs-item__date">November 23, 2021</p>
+                  <a href="" class="blogs-item__link">
+                    <img src="img/icons/arrow2.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="join" data-aos="fade">
+          <div class="join__container">
+            <h2 class="join__title">Wanna join the interno?</h2>
+            <div class="join__text">
+              <p>Contact Us & Get a Free Consultation</p>
+            </div>
+            <a href="" class="join__link">Connect With us</a>
           </div>
         </section>
       </main>
-      <footer class="footer">
+      <footer class="footer" data-aos="fade-top">
         <div class="footer__container">
-          <div class="footer__inner">
-            <div class="footer__left footer-left">
-              <a href="" class="footer-left__logo">
-                <img src="../img/icons/footer/logo.svg" alt="" />
-              </a>
-              <div class="footer-left__text">
-                <p>Ваш поставщик в мир лимитированного ассортимента с доставкой по всему миру</p>
-              </div>
-              <div class="footer-left__links" data-da=".footer__list--second,1000.99,last">
-                <a href="" class="footer-left__link">
-                  <img src="img/icons/footer/tg.svg" alt="" />
-                </a>
-                <a href="" class="footer-left__link">
-                  <img src="img/icons/footer/vk.svg" alt="" />
-                </a>
-              </div>
+          <div class="footer__item footer-item">
+            <div class="footer-item__img">
+              <img src="img/icons/logo.svg" alt="" />
             </div>
-            <nav class="footer__nav">
-              <ul class="footer__list">
-                <p class="footer__title">Каталог</p>
-                <li class="footer__item">
-                  <a href="" class="footer__link">Одежда</a>
-                </li>
-                <li class="footer__item">
-                  <a href="" class="footer__link">Обувь</a>
-                </li>
-                <li class="footer__item">
-                  <a href="" class="footer__link">Аксессуары</a>
-                </li>
-                <li class="footer__item">
-                  <a href="" class="footer__link">Сумки</a>
-                </li>
-                <li class="footer__item">
-                  <a href="" class="footer__link">Товары для спорта</a>
-                </li>
-                <li class="footer__item">
-                  <a href="" class="footer__link">Pre-loved</a>
-                </li>
-                <li class="footer__item">
-                  <a href="" class="footer__link">Custom</a>
-                </li>
-              </ul>
-              <ul class="footer__list footer__list--second">
-                <p class="footer__title">Меню</p>
-                <li class="footer__item">
-                  <a href="" class="footer__link">О нас</a>
-                </li>
-                <li class="footer__item">
-                  <a href="" class="footer__link">Продать свою одежду</a>
-                </li>
-                <li class="footer__item">
-                  <a href="" class="footer__link">Консьерж</a>
-                </li>
-                <li class="footer__item">
-                  <a href="" class="footer__link">Клиентский сервис</a>
-                </li>
-              </ul>
-              <ul class="footer__list">
-                <p class="footer__title">Поддержка</p>
-                <li class="footer__item">
-                  <a href="" class="footer__link">Доставка</a>
-                </li>
-                <li class="footer__item">
-                  <a href="" class="footer__link">Оплата</a>
-                </li>
-                <li class="footer__item">
-                  <a href="" class="footer__link">Частые вопросы</a>
-                </li>
-                <li class="footer__item">
-                  <a href="" class="footer__link">Клиентский сервис</a>
-                </li>
-                <li class="footer__item">
-                  <a href="" class="footer__link">Отследить заказ</a>
-                </li>
-              </ul>
-            </nav>
+            <div class="footer-item__text">
+              <p>We are the leading architect and interior design firm in the world.</p>
+            </div>
+            <ul class="footer-item__list">
+              <li class="footer-item__item">
+                <a href="" class="footer-item__link"><img src="img/icons/facebook.svg" alt="" /></a>
+              </li>
+              <li class="footer-item__item">
+                <a href="" class="footer-item__link"><img src="img/icons/twitter.svg" alt="" /></a>
+              </li>
+              <li class="footer-item__item">
+                <a href="" class="footer-item__link"><img src="img/icons/linkedin.svg" alt="" /></a>
+              </li>
+              <li class="footer-item__item">
+                <a href="" class="footer-item__link">
+                  <img src="img/icons/instagram.svg" alt="" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__item footer-item">
+            <h5 class="footer-item__title title">Pages</h5>
+            <ul class="footer-item__links item-links">
+              <li class="item-links__item">
+                <a href="" class="item-links__link link">Style Guide</a>
+              </li>
+              <li class="item-links__item">
+                <a href="" class="item-links__link link">Protected</a>
+              </li>
+              <li class="item-links__item">
+                <a href="" class="item-links__link link">Licenses</a>
+              </li>
+              <li class="item-links__item">
+                <a href="" class="item-links__link link">Changelog</a>
+              </li>
+              <li class="item-links__item"><a href="" class="item-links__link link">404</a></li>
+            </ul>
+          </div>
+          <div class="footer__item footer-item">
+            <h5 class="footer-item__title title">Explore</h5>
+            <ul class="footer-item__links item-links">
+              <li class="item-links__item">
+                <a href="" class="item-links__link link">About Us</a>
+              </li>
+              <li class="item-links__item">
+                <a href="" class="item-links__link link">Recent Blog</a>
+              </li>
+              <li class="item-links__item">
+                <a href="" class="item-links__link link">Pricing Plan</a>
+              </li>
+              <li class="item-links__item">
+                <a href="" class="item-links__link link">Our Projects</a>
+              </li>
+              <li class="item-links__item">
+                <a href="" class="item-links__link link">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__item footer-item">
+            <h5 class="footer-item__title title">Contact</h5>
+            <address class="footer-item__address link">
+              53, East Birchwood Ave. Brooklyn, New York 11201, USA.
+            </address>
+            <a href="" class="footer-item__email link">contact@interno.com</a>
+            <a href="" class="footer-item__num link">(123) 456 - 7890</a>
           </div>
         </div>
-        <div class="footer__copy footer-copy">
-          <div class="footer__container">
-            <div class="footer__block">
-              <a href="" class="footer-copy__link">Политика конфиденциальности</a>
-              <a href="" class="footer-copy__link">Пользовательское соглашение</a>
-              <a href="" class="footer-copy__link">help@dealerclub.com</a>
-              <a href="" class="footer-copy__link">info@dealermsk.com</a>
-              <a href="" class="footer-copy__link">+7 (929) 555-00-04</a>
-            </div>
+        <div class="footer__copy">
+          <div class="footer__copy--text">
+            <p>
+              Copyright © Interno | Designed by <a href="">Victorflow</a> Templates - Powered by
+              <a href="">Webflow</a>
+            </p>
           </div>
         </div>
       </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/index.bundle.js"></script>
   </body>
 </html>
